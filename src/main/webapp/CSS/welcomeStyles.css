@@ -1,0 +1,197 @@
+@charset "ISO-8859-1";
+body{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	background: #363a43;
+}
+
+header{
+	background: #262626;
+}
+
+
+li{
+	list-style: none;
+}
+
+a{
+	color:white;
+	text-decoration: none;
+}
+
+.navbar{
+	min-height:70px;
+	display:flex;
+	justify-content:space-between;
+	align-items: center;
+	padding: 0 24px;
+}
+
+.nav-menu{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-right: 29%;
+	gap:60px;
+}
+
+.nav-branding{
+	font-size: 2rem;
+}
+
+.nav-link, ul li a{
+	transition: 0.7s ease;
+}
+
+.nav-link:hover{
+	color:hotpink;
+}
+
+.bar{
+	display:block;
+	width:25px;
+	height: 3px;
+	margin:5px auto;
+	-webkit-transition: all 0.3s eas-in-out;
+	transition: all 0.3s eas-in-out;
+	background-color:white;
+}
+
+ul li a {
+	display:block;
+	padding: 20px 25px;
+}
+
+ul li ul.dropdown li{
+	display:block;
+}
+
+ul li ul.dropdown{
+	width:100;
+	background: #262626;
+	position: absolute;
+	z-index: 999;
+	display:none;
+}
+
+ul li a:hover{
+	color: hotpink;
+}
+ul li:hover ul.dropdown{
+	display:block;
+}
+
+
+
+.AuctionCreate{
+	text-align: center;
+	margin-top: 20px;
+	color:white;
+}
+
+
+/*Auction Item type menu vv*/
+
+.dropdownType{
+	min-width: 15em;
+	position: relative;
+	margin:2em
+	
+}
+
+.dropdownType * {
+	box-sizing: border-box;
+}
+.select{
+	background:#2a2f3b;
+	color:#fff;
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+	border: 2px #2a2f3b solid;
+	border-radius:0.5em;
+	padding:1em;
+	cursor:pointer;
+	transition:0.3s;
+}
+
+.select-clicked{
+	border:2px #26489a solid;
+	box-shadow: 0 0 0.8em #26489a;
+}
+
+.select:hover{
+	background:#323741;
+}
+
+.caret{
+	width:0;
+	height:0;
+	margin-left: 5px;
+	border-left:5px solid transparent;
+	border-right: 5px solid transparent;
+	border-top:6px solid #fff;
+	transition: 0.3s;
+}
+
+.caret-rotate{
+	transform: rotate(180deg);
+}
+
+.menu{
+	list-style: none;
+	padding:0.2em 0.5em;
+	background: #323741;
+	border:1px #363a43 solid;
+	box-shadow: 0 0.5 1em rgba(0,0,0,0.2);
+	color:#9fa5b5;
+	position:absolute;
+	top:3em;
+	left:50%;
+	width:100%;
+	transform: translateX(-50%);
+	opacity:0;
+	display:none;
+    transition: 0.2s;
+}
+
+.menu li{
+	padding: 0.7em 0.5em;
+	margin:0.3em 0;
+	border-radius:0.5em;
+	cursor:pointer;
+}
+
+.menu li:hover{
+	background:#2a2d35;
+}
+
+.active{
+	background:#23242a;
+}
+
+.menu-open{
+	display:block;
+	opacity:1; 
+}
+
+/*Auction Item type menu ^^*/
+
+
+.form-container{
+	display:none;
+	
+}
+
+.label{
+	color:#fff;
+	margin-left: 20px;
+}
+
+
+
+
+
+
+
